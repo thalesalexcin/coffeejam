@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 4</name>
     <events>
+        <variable constant="0" name="rotate" sid="672709938726381" static="0" type="number">0</variable>
         <event-block sid="5152049470955135">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="8525089179389494" type="System" />
@@ -22,9 +23,17 @@
                     <param id="0" name="Group name">&quot;Serve&quot;</param>
                     <param id="1" name="State">1</param>
                 </action>
+                <action id="-12" name="Set group active" sid="4846376892738242" type="System">
+                    <param id="0" name="Group name">&quot;rotate&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
                 <action id="-12" name="Set group active" sid="2412231846514668" type="System">
                     <param id="0" name="Group name">&quot;end3&quot;</param>
                     <param id="1" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8507914752332222" type="System">
+                    <param id="0" name="Variable">rotate</param>
+                    <param id="1" name="Value">random(0,90)</param>
                 </action>
             </actions>
         </event-block>
@@ -138,6 +147,10 @@
                                 </action>
                                 <action id="-12" name="Set group active" sid="5376014709444834" type="System">
                                     <param id="0" name="Group name">&quot;Serve&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="1484317357546786" type="System">
+                                    <param id="0" name="Group name">&quot;rotate&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="6728146051254383" type="System">
@@ -263,5 +276,27 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" inactive="1" sid="2896930571310055" title="rotate">
+            <sub-events>
+                <event-block sid="6724439200645168">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="4565019475845674" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="8688982331270992" type="verre">
+                            <param id="0" name="Speed">-90</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1974145441393488" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="4664181149884849" type="verre">
+                            <param id="0" name="Speed">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

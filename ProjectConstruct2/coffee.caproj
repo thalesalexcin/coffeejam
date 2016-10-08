@@ -207,6 +207,11 @@
             <instance-variables>
                 <instance-variable name="served" sid="8720026952103328" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Rotate" sid="2550427500145168">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2057312448647036" speed="5">
                     <frame duration="1" hotspotX="0.527132" hotspotY="0.4375" />
