@@ -78,14 +78,6 @@
                 <action id="-16" name="Wait" sid="1509162297513698" type="System">
                     <param id="0" name="Seconds">1</param>
                 </action>
-                <action id="-3" name="Set position" sid="903665768211423" type="tutoMix">
-                    <param id="0" name="X">0</param>
-                    <param id="1" name="Y">360</param>
-                </action>
-                <action id="-15" name="Set visible" sid="9958296153845993" type="tutoMix">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="6608290145020767" type="tutoMix" />
                 <action id="-16" name="Wait" sid="7795729716190068" type="System">
                     <param id="0" name="Seconds">4.0</param>
                 </action>
@@ -101,12 +93,32 @@
                     <param id="0" name="Group name">&quot;end&quot;</param>
                     <param id="1" name="State">1</param>
                 </action>
-                <action id="-10" name="Add to" sid="933598897736786" type="System">
-                    <param id="0" name="Variable">CurrentLevel</param>
-                    <param id="1" name="Value">1</param>
-                </action>
             </actions>
         </event-block>
+        <event-group description="" sid="6466054857550495" title="TutorialMix">
+            <sub-events>
+                <event-block sid="2594053932242809">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="8062044476258165" type="System" />
+                        <condition id="-14" name="Compare variable" sid="2947827419026701" type="System">
+                            <param id="0" name="Variable">CurrentLevel</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="903665768211423" type="tutoMix">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">360</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9958296153845993" type="tutoMix">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="6608290145020767" type="tutoMix" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" inactive="1" sid="7316081973392559" title="mix">
             <sub-events>
                 <event-block sid="4593861319559021">
