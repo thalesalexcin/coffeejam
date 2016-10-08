@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 4</name>
+    <events>
+        <event-block sid="5152049470955135">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8525089179389494" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="8707193765013273" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4689229551844168" type="tutoserve">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="870606814704961" type="tutoserve" />
+                <action id="-16" name="Wait" sid="1537668946222253" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-12" name="Set group active" sid="8567900477747874" type="System">
+                    <param id="0" name="Group name">&quot;Serve&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="2412231846514668" type="System">
+                    <param id="0" name="Group name">&quot;end3&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8611201828784391">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="929476309972052" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8241334952210889" type="testVariable">
+                    <param id="0" name="Text">verre.served</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="8226591268717155" title="Serve">
+            <sub-events>
+                <event-block any="1" sid="2244651731363214">
+                    <conditions>
+                        <condition id="8" name="Compare orientation" sid="5353781518232543" type="Touch">
+                            <param id="0" name="Orientation">1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Angle">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="8774910362284623" type="shakerServe">
+                            <param id="0" name="Degrees">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="8394013415029324">
+                    <conditions>
+                        <condition id="8" name="Compare orientation" sid="1805073065788923" type="Touch">
+                            <param id="0" name="Orientation">1</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Angle">-10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-19" name="Rotate counter-clockwise" sid="4928972926481154" type="shakerServe">
+                            <param id="0" name="Degrees">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="1191082930496777">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="459546077777513" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="4867308092874376" type="shakerServe">
+                            <param id="0" name="Degrees">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="8776399347337134">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5914497088456162" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-19" name="Rotate counter-clockwise" sid="2490147158427391" type="shakerServe">
+                            <param id="0" name="Degrees">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9910977878569311">
+                    <conditions>
+                        <condition id="-13" name="Is between angles" sid="7526590787225206" type="shakerServe">
+                            <param id="0" name="First angle">220</param>
+                            <param id="1" name="Second angle">280</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="640285847666893" type="shakerServe">
+                            <param id="0" name="Object">serveRed</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="5732379200748046" type="serveRed">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4016446940586499">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="5025163117050063" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="9963924821799356" type="verre">
+                                    <param id="0" name="Instance variable">served</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9508646195746409">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="671583393273123" type="verre">
+                                    <param id="0" name="Instance variable">served</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="1076045673726458" type="System">
+                                    <param id="0" name="Group name">&quot;end3&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="5376014709444834" type="System">
+                                    <param id="0" name="Group name">&quot;Serve&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="6728146051254383" type="System">
+                                    <param id="0" name="Layout">Success</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="1266974012490644" title="end3">
+            <sub-events>
+                <event-block sid="6457768027155987">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9056447024164125" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="147789134698171" type="System">
+                            <param id="0" name="Variable">chrono</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="1277037046695687" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9238214191663062">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3975804623321002" type="System">
+                            <param id="0" name="Variable">chrono</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2270784033608867" type="System">
+                            <param id="0" name="Variable">chrono</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="3296359565265909" type="fond">
+                            <param id="0" name="X">640</param>
+                            <param id="1" name="Y">360</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4947020524431347" type="fond">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="93683955183056" type="fond" />
+                        <action id="-12" name="Set group active" sid="2768847970326988" type="System">
+                            <param id="0" name="Group name">&quot;Serve&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3904769925289784" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3886525197530687" type="System">
+                            <param id="0" name="Layout">End</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="8942158809305389">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="562915479060971" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9287512581810627" type="chrono">
+                    <param id="0" name="Text">chrono</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4364865542607204">
+            <conditions>
+                <condition id="-20" name="Is on mobile device" sid="2329783097516079" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="6401003127556954" type="pictoserve">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9676655903607643">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6010964983376421" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="9358301684084199" type="pictoserve">
+                    <param id="0" name="Speed">-45</param>
+                </action>
+                <action id="-16" name="Wait" sid="8480252552814855" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="6629165991628512" type="pictoserve">
+                    <param id="0" name="Speed">45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2242246238218974">
+            <conditions>
+                <condition id="-20" inverted="1" name="Is on mobile device" sid="502381900735334" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7526175500045953" type="keyboard2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="220749610253031">
+            <conditions>
+                <condition id="4" name="On finished" sid="3775710025729286" type="keyboard2">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="1554167328151184" type="keyboard2">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

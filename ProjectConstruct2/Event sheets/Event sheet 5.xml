@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 5</name>
+    <events>
+        <event-block sid="7644006589280123">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9273365681071734" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2992393858302341" type="chrono">
+                    <param id="0" name="Text">chrono</param>
+                </action>
+                <action id="-16" name="Wait" sid="5126993357650899" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-10" name="Add to" sid="9392565620225534" type="System">
+                    <param id="0" name="Variable">chrono</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6867137238016593" type="System">
+                    <param id="0" name="Layout">Mix</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

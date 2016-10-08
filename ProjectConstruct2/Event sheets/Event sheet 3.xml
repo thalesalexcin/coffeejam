@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <event-block sid="9996647932320657">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6290496744163832" type="System" />
+            </conditions>
+            <actions>
+                <action id="-27" name="Set effect enabled" sid="3256482137077218" type="cocktail">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;WarpRadial&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="9019185303946571" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3941635119604437" type="tutoshake">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9638535770597963" type="tutoshake" />
+                <action id="-16" name="Wait" sid="6579719281296493" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-12" name="Set group active" sid="2202913952004804" type="System">
+                    <param id="0" name="Group name">&quot;ordi&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="2606557232867519" type="System">
+                    <param id="0" name="Group name">&quot;ordi2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="1085514340624363" type="System">
+                    <param id="0" name="Group name">&quot;gyroscope+&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="8603100083384185" type="System">
+                    <param id="0" name="Group name">&quot;gyroscope-&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="6414646453902939" type="System">
+                    <param id="0" name="Group name">&quot;end2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="4595649076824581" title="ordi">
+            <sub-events>
+                <event-block sid="5468028370363486">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5796808154365831" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="1655464840009016" type="cocktail">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;WarpRadial&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="3300598716049281" type="cocktail">
+                            <param id="0" name="Instance variable">shaked</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="3839073667498906" type="System">
+                            <param id="0" name="Group name">&quot;ordi&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="2012142794224411" type="System">
+                            <param id="0" name="Group name">&quot;ordi2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="2768473648693481" title="ordi2">
+            <sub-events>
+                <event-block sid="5468028370363486">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5796808154365831" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="1655464840009016" type="cocktail">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;WarpRadial&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="3300598716049281" type="cocktail">
+                            <param id="0" name="Instance variable">shaked</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="1706809730706859" type="System">
+                            <param id="0" name="Group name">&quot;ordi2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="3839073667498906" type="System">
+                            <param id="0" name="Group name">&quot;ordi&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1995143934498594">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="7926626792450012" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="6189423660664384" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="349203567164819" type="cocktail">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;WarpRadial&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6641486587219431">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="764813306038472" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="7422805825003818" type="cocktail">
+                    <param id="0" name="Instance variable">shaked</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="7741511509392528" title="gyroscope+">
+            <sub-events>
+                <event-block sid="4786067303474906">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="5221039190170869" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6367798090944228" type="pictoshake">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block any="1" sid="7794943354757592">
+                            <conditions>
+                                <condition disabled="1" id="8" name="Compare orientation" sid="7304211632461323" type="Touch">
+                                    <param id="0" name="Orientation">1</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Angle">10</param>
+                                </condition>
+                                <condition disabled="1" id="8" name="Compare orientation" sid="9514268816639464" type="Touch">
+                                    <param id="0" name="Orientation">0</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Angle">10</param>
+                                </condition>
+                                <condition id="9" name="Compare acceleration" sid="6448260339862638" type="Touch">
+                                    <param id="0" name="Axis">0</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Acceleration">10</param>
+                                </condition>
+                                <condition disabled="1" id="8" name="Compare orientation" sid="2786640836739782" type="Touch">
+                                    <param id="0" name="Orientation">2</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Angle">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-27" name="Set effect enabled" sid="1754983839035144" type="cocktail">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;WarpRadial&quot;</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="8665599020864936" type="cocktail">
+                                    <param id="0" name="Instance variable">shaked</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="5096686677239361" type="System">
+                                    <param id="0" name="Group name">&quot;gyroscope+&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="4069971007092478" type="System">
+                                    <param id="0" name="Group name">&quot;gyroscope-&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="7074148999705291" type="Browser">
+                                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="3520708615942058" title="gyroscope-">
+            <sub-events>
+                <event-block sid="4786067303474906">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="5221039190170869" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="8047736005741145" type="pictoshake">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block any="1" sid="7442311159140465">
+                            <conditions>
+                                <condition disabled="1" id="8" name="Compare orientation" sid="3121201418762053" type="Touch">
+                                    <param id="0" name="Orientation">1</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Angle">-10</param>
+                                </condition>
+                                <condition disabled="1" id="8" name="Compare orientation" sid="5060001480103847" type="Touch">
+                                    <param id="0" name="Orientation">0</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Angle">-10</param>
+                                </condition>
+                                <condition id="9" name="Compare acceleration" sid="9463836191768403" type="Touch">
+                                    <param id="0" name="Axis">0</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Acceleration">-10</param>
+                                </condition>
+                                <condition disabled="1" id="8" name="Compare orientation" sid="7393145285311939" type="Touch">
+                                    <param id="0" name="Orientation">2</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Angle">-10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-27" name="Set effect enabled" sid="742528355473312" type="cocktail">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;WarpRadial&quot;</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="679550187061069" type="cocktail">
+                                    <param id="0" name="Instance variable">shaked</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="4372921405685261" type="System">
+                                    <param id="0" name="Group name">&quot;gyroscope-&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="2447729071035757" type="System">
+                                    <param id="0" name="Group name">&quot;gyroscope+&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="12" name="Vibrate" sid="8426074994011252" type="Browser">
+                                    <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="5252169494179417">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1962621755265001" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4197322350763197" type="testVariable">
+                    <param id="0" name="Text">cocktail.shaked</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9568380426385978">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3053754647993605" type="cocktail">
+                    <param id="0" name="Instance variable">shaked</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="4684725229684378" type="cocktail">
+                    <param id="0" name="Instance variable">shaked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2420123959709498">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6598481110483412" type="cocktail">
+                    <param id="0" name="Instance variable">shaked</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="8059569610279162" type="System">
+                    <param id="0" name="Group name">&quot;end2&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="9029709392659246" type="System">
+                    <param id="0" name="Group name">&quot;gyroscope-&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="60547881757122" type="System">
+                    <param id="0" name="Group name">&quot;gyroscope+&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="6556338930588418" type="System">
+                    <param id="0" name="Group name">&quot;ordi&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="607016956834248" type="System">
+                    <param id="0" name="Group name">&quot;ordi2&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6255935385915287" type="System">
+                    <param id="0" name="Layout">Serve</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="5302681546608473" title="end2">
+            <sub-events>
+                <event-block sid="6457768027155987">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9056447024164125" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="147789134698171" type="System">
+                            <param id="0" name="Variable">chrono</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="974822316441286" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9238214191663062">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3975804623321002" type="System">
+                            <param id="0" name="Variable">chrono</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2270784033608867" type="System">
+                            <param id="0" name="Variable">chrono</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="3296359565265909" type="fond">
+                            <param id="0" name="X">640</param>
+                            <param id="1" name="Y">360</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4947020524431347" type="fond">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="93683955183056" type="fond" />
+                        <action id="-12" name="Set group active" sid="3458639359646048" type="System">
+                            <param id="0" name="Group name">&quot;gyroscope-&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="9669389346524439" type="System">
+                            <param id="0" name="Group name">&quot;gyroscope+&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="891382018203439" type="System">
+                            <param id="0" name="Group name">&quot;ordi&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="336430198051751" type="System">
+                            <param id="0" name="Group name">&quot;ordi2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3904769925289784" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3886525197530687" type="System">
+                            <param id="0" name="Layout">End</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="953452545867249">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3797990852077228" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3124525755176399" type="chrono">
+                    <param id="0" name="Text">chrono</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9876196597092033">
+            <conditions>
+                <condition id="-20" inverted="1" name="Is on mobile device" sid="9004050512950433" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="5552055363952191" type="keyboard1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="51166629880643">
+            <conditions>
+                <condition id="4" name="On finished" sid="1859404637474267" type="keyboard1">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="5419291561358362" type="keyboard1">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
