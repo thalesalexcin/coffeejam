@@ -10,7 +10,6 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>19500</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -918,8 +917,9 @@
             <plugin id="TiledBg" />
             <texture original-source="G:\Graph\fond scène mix.png" />
         </object-type>
-        <object-type global="1" name="Ingredients" sid="6504438205302759">
-            <plugin id="Arr" />
+        <object-type name="fondshaker" sid="7382662901947715">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\Graph\fond shaker.png" />
         </object-type>
     </object-folder>
     <families />
