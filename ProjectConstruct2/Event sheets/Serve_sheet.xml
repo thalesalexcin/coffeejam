@@ -282,27 +282,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" inactive="1" sid="2896930571310055" title="rotate">
-            <sub-events>
-                <event-block sid="6724439200645168">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="4565019475845674" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Rotate" id="0" name="Set speed" sid="8688982331270992" type="verre">
-                            <param id="0" name="Speed">-90</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="1974145441393488" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action behavior="Rotate" id="0" name="Set speed" sid="4664181149884849" type="verre">
-                            <param id="0" name="Speed">90</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
     </events>
 </c2eventsheet>

@@ -208,8 +208,8 @@
                 <instance-variable name="served" sid="8720026952103328" type="number" />
             </instance-variables>
             <behaviors>
-                <behavior-type name="Rotate" sid="2550427500145168">
-                    <behavior id="Rotate" />
+                <behavior-type name="Sine" sid="5804454531040925">
+                    <behavior id="Sin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
