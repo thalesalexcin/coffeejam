@@ -220,9 +220,14 @@
         </object-type>
         <object-type name="shakerServe" sid="8280975384425699">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="2427717826034275">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1152196776150296" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="1">
+                    <frame duration="1" hotspotX="0.495652" hotspotY="0.497409">
                         <image-point name="Imagepoint 1" x="0.434783" y="0.0518135" />
                     </frame>
                 </animation>
@@ -896,12 +901,12 @@
         <layout>End.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
-        <event-sheet>Event sheet 4.xml</event-sheet>
-        <event-sheet>Event sheet 5.xml</event-sheet>
-        <event-sheet>Event sheet 6.xml</event-sheet>
+        <event-sheet>Menu_sheet.xml</event-sheet>
+        <event-sheet>Mix_sheet.xml</event-sheet>
+        <event-sheet>Shake_sheet.xml</event-sheet>
+        <event-sheet>Serve_sheet.xml</event-sheet>
+        <event-sheet>Success_sheet.xml</event-sheet>
+        <event-sheet>End_sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="1">

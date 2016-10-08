@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 2</name>
+    <name>Mix_sheet</name>
     <events>
         <variable constant="0" name="chrono" sid="1237630216652177" static="0" type="number">80</variable>
         <event-block sid="9829096483456438">
