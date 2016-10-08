@@ -183,6 +183,29 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="7141541934680447">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7614043059630244" type="verre">
+                            <param id="0" name="Object">serveRed</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4016446940586499">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="5025163117050063" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="9963924821799356" type="verre">
+                                    <param id="0" name="Instance variable">served</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="9910977878569311">
                     <conditions>
                         <condition id="-13" name="Is between angles" sid="7526590787225206" type="shakerServe">
@@ -204,19 +227,6 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="4016446940586499">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="5025163117050063" type="System">
-                                    <param id="0" name="Interval (seconds)">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-11" name="Add to" sid="9963924821799356" type="verre">
-                                    <param id="0" name="Instance variable">served</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="9508646195746409">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="671583393273123" type="verre">
