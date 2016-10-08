@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Mix_sheet</name>
     <events>
+        <variable constant="0" name="CurrentLevel" sid="1112035818218792" static="0" type="number">0</variable>
         <variable constant="0" name="chrono" sid="1237630216652177" static="0" type="number">80</variable>
         <event-block sid="9829096483456438">
             <conditions>
@@ -99,6 +100,10 @@
                 <action id="-12" name="Set group active" sid="144779733322283" type="System">
                     <param id="0" name="Group name">&quot;end&quot;</param>
                     <param id="1" name="State">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="933598897736786" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

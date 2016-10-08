@@ -890,6 +890,29 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="tutoDrag" sid="1367066991550174">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="InitialX" sid="7467790851341469" type="number" />
+                <instance-variable name="InitialY" sid="3286891439062591" type="number" />
+                <instance-variable name="NotTouched" sid="7451498391435713" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7452462719991253" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Felipe\Desktop\enjmin\M2\Enjam\coffejam-assets\1475969082_one_finger_drag_gestureworks.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.226563" />
+                            <point x="0.640625" y="0.359375" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.789063" y="0.789063" />
+                            <point x="0.5" y="0.710938" />
+                            <point x="0.359375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

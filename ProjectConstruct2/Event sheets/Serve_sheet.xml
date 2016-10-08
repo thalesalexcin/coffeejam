@@ -38,6 +38,14 @@
                     <param id="0" name="Variable">rotate</param>
                     <param id="1" name="Value">random(0,90)</param>
                 </action>
+                <action id="-10" name="Set value" sid="196967557741959" type="tutoDrag">
+                    <param id="0" name="Instance variable">InitialX</param>
+                    <param id="1" name="Value">Self.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="2968430540464794" type="tutoDrag">
+                    <param id="0" name="Instance variable">InitialY</param>
+                    <param id="1" name="Value">Self.Y</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8611201828784391">
@@ -52,6 +60,64 @@
         </event-block>
         <event-group description="" inactive="1" sid="8226591268717155" title="Serve">
             <sub-events>
+                <event-group description="" sid="1882909052951908" title="Tutorial">
+                    <sub-events>
+                        <event-block sid="3020182465840765">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3034522069249381" type="System">
+                                    <param id="0" name="Variable">CurrentLevel</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="5690014913409322" type="tutoDrag">
+                                    <param id="0" name="Instance variable">NotTouched</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-23" name="Move at angle" sid="9971139093271538" type="tutoDrag">
+                                    <param id="0" name="Angle">210</param>
+                                    <param id="1" name="Distance">100 * dt</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="5977013707686911">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="3617748063124967" type="System">
+                                            <param id="0" name="Interval (seconds)">1.5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="3290860828104236" type="tutoDrag">
+                                            <param id="0" name="X">Self.InitialX</param>
+                                            <param id="1" name="Y">Self.InitialY</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="4785902271903501">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="9772409357569713" type="Touch">
+                                    <param id="0" name="Object">shakerServe</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="4370282484331104" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="7206095517343404" type="tutoDrag">
+                                    <param id="0" name="Instance variable">NotTouched</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9408467223955485" type="tutoDrag">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6705703386700873">
+                            <conditions />
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block any="1" sid="2244651731363214">
                     <conditions>
                         <condition id="8" name="Compare orientation" sid="5353781518232543" type="Touch">
