@@ -427,6 +427,10 @@
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="3889667755396257" type="component1">
                             <param id="0" name="State">1</param>
                         </action>
+                        <action id="2" name="Set at X" sid="4010999039961002" type="Ingredients">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9054621633625856">
@@ -438,6 +442,10 @@
                     <actions>
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="5417513998920783" type="component8">
                             <param id="0" name="State">1</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="9449842560288241" type="Ingredients">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">8</param>
                         </action>
                     </actions>
                 </event-block>
@@ -451,6 +459,10 @@
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="7515074093547465" type="component9">
                             <param id="0" name="State">1</param>
                         </action>
+                        <action id="2" name="Set at X" sid="745946536823604" type="Ingredients">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">9</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4848293958592682">
@@ -462,6 +474,10 @@
                     <actions>
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="1314734880463684" type="component4">
                             <param id="0" name="State">1</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="767028484603302" type="Ingredients">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">4</param>
                         </action>
                     </actions>
                 </event-block>
@@ -475,6 +491,10 @@
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="5989242146652936" type="component6">
                             <param id="0" name="State">1</param>
                         </action>
+                        <action id="2" name="Set at X" sid="4407958578460651" type="Ingredients">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="578232412491083">
@@ -486,6 +506,10 @@
                     <actions>
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="1057293612802985" type="component2">
                             <param id="0" name="State">1</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="5469634777396224" type="Ingredients">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                     </actions>
                 </event-block>
@@ -499,6 +523,10 @@
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="5159109017054593" type="component3">
                             <param id="0" name="State">1</param>
                         </action>
+                        <action id="2" name="Set at X" sid="8973178634126711" type="Ingredients">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3577710542616345">
@@ -511,6 +539,10 @@
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="4552078411309153" type="component7">
                             <param id="0" name="State">1</param>
                         </action>
+                        <action id="2" name="Set at X" sid="1886657976873299" type="Ingredients">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">7</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="1206915292419251">
@@ -522,6 +554,10 @@
                     <actions>
                         <action behavior="DragDrop" id="0" name="Set enabled" sid="8383746171679582" type="component5">
                             <param id="0" name="State">1</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="2595302488014206" type="Ingredients">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">5</param>
                         </action>
                     </actions>
                 </event-block>
