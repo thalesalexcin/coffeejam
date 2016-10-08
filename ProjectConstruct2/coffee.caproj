@@ -913,6 +913,10 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="fondmix" sid="4593710104979023">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\Graph\fond scène mix.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
