@@ -708,7 +708,7 @@
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>1</fade-in-time>
-                                <wait-time>3</wait-time>
+                                <wait-time>2</wait-time>
                                 <fade-out-time>1</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>

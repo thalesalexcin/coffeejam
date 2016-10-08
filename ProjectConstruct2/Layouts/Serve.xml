@@ -42,7 +42,7 @@
                     <behavior-instances>
                         <behavior-instance type="Sine">
                             <properties>
-                                <active-on-start>Yes</active-on-start>
+                                <active-on-start>No</active-on-start>
                                 <movement>Horizontal</movement>
                                 <wave>Sine</wave>
                                 <period>4</period>
@@ -249,7 +249,7 @@
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>1</fade-in-time>
-                                <wait-time>3</wait-time>
+                                <wait-time>2</wait-time>
                                 <fade-out-time>1</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
@@ -258,13 +258,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640</x>
-                        <y>360</y>
+                        <x>6</x>
+                        <y>867</y>
                         <z>0</z>
                         <width>1280</width>
                         <height>250</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

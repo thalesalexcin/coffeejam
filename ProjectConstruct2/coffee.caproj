@@ -250,7 +250,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4219485085608735" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\tutos mini jeux\tuto mix.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -276,7 +276,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8542273434347854" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\tutos mini jeux\tuto shake.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -289,7 +289,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4018004508585416" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="G:\tutos mini jeux\tuto serve.png" />
                 </animation>
             </animation-folder>
         </object-type>
