@@ -917,6 +917,10 @@
             <plugin id="TiledBg" />
             <texture original-source="G:\Graph\fond scène mix.png" />
         </object-type>
+        <object-type name="fondshaker" sid="7382662901947715">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\Graph\fond shaker.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
